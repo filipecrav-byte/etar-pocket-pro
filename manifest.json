@@ -1,0 +1,12 @@
+
+{
+  "name": "Etar Pocket Pro",
+  "short_name": "Etar Pocket Pro",
+  "description": "Guia Operacional e Formação",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#123b35"
+}

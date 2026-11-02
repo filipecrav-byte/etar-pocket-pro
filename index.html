@@ -348,4 +348,19 @@ document.getElementById('go').onclick=function(){
 // Add V30 status without replacing any original calculator result or formula.
 var calc=document.getElementById('ic');var originalCalculation=calc.onclick;calc.onclick=function(){originalCalculation.call(this);var value=num('iv');if(value!==null&&value>=0&&value<=1000){document.getElementById('ir').insertAdjacentHTML('afterbegin',nota(value,false))}};
 })();
-</script><script>(function(){var nav=document.querySelector(".acad-nav");if(!nav)return;var b=nav.querySelectorAll("button[data-acad]");var c=document.querySelectorAll(".acad-chapter");b.forEach(function(x){x.addEventListener("click",function(){var id=x.getAttribute("data-acad");b.forEach(function(y){y.classList.toggle("on",y===x)});c.forEach(function(z){z.classList.toggle("on",z.id===id)});var s=document.getElementById("s5");if(s)s.scrollIntoView({behavior:"smooth",block:"start"})})})})();</script></body></html>
+</script><script>(function(){var nav=document.querySelector(".acad-nav");if(!nav)return;var b=nav.querySelectorAll("button[data-acad]");var c=document.querySelectorAll(".acad-chapter");b.forEach(function(x){x.addEventListener("click",function(){var id=x.getAttribute("data-acad");b.forEach(function(y){y.classList.toggle("on",y===x)});c.forEach(function(z){z.classList.toggle("on",z.id===id)});var s=document.getElementById("s5");if(s)s.scrollIntoView({behavior:"smooth",block:"start"})})})})();
+ </script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("./sw.js")
+      .catch(function (error) {
+        console.error("Erro:", error);
+      });
+  });
+}
+</script>
+
+</body>
+</html>
